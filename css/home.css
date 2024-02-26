@@ -1,0 +1,64 @@
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+#second,
+#third {
+    padding: 8%;
+}
+
+#about-text {
+    padding: 15% 20% 20%;
+}
+
+#contact-text {
+    padding: 15% 20% 20%;
+}
+
+.facebook-contact {
+    position: relative;
+    /* width: 200px; */
+    height: 200px;
+}
+
+/* Make the image to responsive */
+.image {
+    height: 200px;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    width: 200px;
+    /* height: 200px; */
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #0866ff;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.facebook-contact:hover .overlay {
+    opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+    color: #eee;
+}

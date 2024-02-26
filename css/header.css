@@ -1,0 +1,129 @@
+/* @font-face {
+			font-family: cusFont;
+			src: url('https://htmljstemplates.com/static_files/fonts/IntegralCF-Medium.woff2');
+		}
+
+		.customFont {
+			font-family: cusFont;
+		} */
+@keyframes slideInLeft {
+    0% {
+        transform: translateY(20%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#cover {
+    background-image: url(../assets/images/trucks_cover.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#cover-text {
+    padding: 15% 20% 20%;
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+a.nav-link:hover {
+    font-size: 18px;
+    color: black;
+}
+
+.fa-bars {
+    font-size: 24px;
+}
+
+.text-accent,
+.fa-bars,
+a.nav-link {
+    color: black;
+    font-weight: bold;
+    transition: font-size .45s ease-out;
+}
+
+.flare2 {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.flare1 {
+    background-color: #0866ff;
+}
+
+.flare1 a,
+.flare2 a {
+    all: unset;
+}
+
+#subMenu a {
+    font-size: 14px;
+    transition: font-size .45s ease-out;
+}
+
+#subMenu a:hover {
+    font-size: 15.5px;
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+#nav {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#scrollNav {
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 300ms linear;
+    box-shadow: 0px 0px 5px black;
+    z-index: 1020;
+}
+
+.showScrollNav {
+    transform: translateY(0%) !important;
+}
+
+@media screen and (max-width:991px) {
+    #menuHolder.menuToggle {
+        width: 320px;
+        max-width: 100%;
+        height: 100vh;
+        overflow: auto;
+        display: block !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: gray;
+        padding: 24px 32px;
+    }
+
+    #mainMenu:before {
+        content: "Main Menu";
+        color: gray;
+    }
+
+    #subMenu:before {
+        content: "Sub Menu";
+        color: gray;
+        /* font-family: cusFont; */
+    }
+
+    #mainMenu,
+    #subMenu {
+        display: block !important;
+        margin-bottom: 20px;
+    }
+}
